@@ -10,12 +10,12 @@ public final class Actions {
 	/**
 	 * Main controller, welcome action. 
 	 */
-	public static final String MAIN_WELCOME="/welcome";
+	public static final String MAIN_WELCOME="/welcome.htm";
 	
 	/**
 	 * Main controller, exit action. 
 	 */
-	public static final String MAIN_EXIT="/exit";
+	public static final String MAIN_EXIT="/exit.htm";
 	
 
 	/**

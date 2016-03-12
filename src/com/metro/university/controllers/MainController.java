@@ -7,9 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.metro.university.config.Actions;
-import com.metro.university.config.Views;
-
 /**
  * 
  * @author elpai
@@ -17,15 +14,15 @@ import com.metro.university.config.Views;
  */
 @Controller
 public class MainController {
-	@RequestMapping(Actions.MAIN_WELCOME)
+	@RequestMapping("/welcome.htm")
 	public ModelAndView welcome(HttpServletRequest request, HttpServletResponse response) {
 		String message = "Привет друг!";
-		return new ModelAndView(Views.WELCOME, "message", message);
+		return new ModelAndView("welcome", "message", message);
 	}
 
-	@RequestMapping(Actions.MAIN_EXIT)
+	@RequestMapping("/exit.htm")
 	public ModelAndView exit(HttpServletRequest request, HttpServletResponse response) {
 		String message = "Пока друг!";
-		return new ModelAndView(Views.WELCOME, "message", message);
+		return new ModelAndView("welcome", "message", message);
 	}
 }
