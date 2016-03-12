@@ -11,34 +11,79 @@ public class DataEntity extends BaseEntity {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private long pointNumber;
-	private double horizontalLength;
-	private double verticalLength;
+	/**
+	 * Point number.
+	 */
+	private Long pointNumber;
+	/**
+	 * Horizontal length.
+	 */
+	private Double horizontalLength;
+	/**
+	 * Vertical length.
+	 */
+	private Double verticalLength;
 
+	/**
+	 * Data Entity.
+	 */
 	public DataEntity() {
 	}
 
-	public long getPointNumber() {
+	/**
+	 * Get point number.
+	 * 
+	 * @return Long
+	 */
+	public final Long getPointNumber() {
 		return pointNumber;
 	}
 
-	public void setPointNumber(long pointNumber) {
+	/**
+	 * Set point number.
+	 * 
+	 * @param pointNumber
+	 *            point number
+	 */
+	public final void setPointNumber(final Long pointNumber) {
 		this.pointNumber = pointNumber;
 	}
 
-	public double getHorizontalLength() {
+	/**
+	 * Get horizontal length.
+	 * 
+	 * @return Double
+	 */
+	public final Double getHorizontalLength() {
 		return horizontalLength;
 	}
 
-	public void setHorizontalLength(double horizontalLength) {
+	/**
+	 * Set horizontal length.
+	 * 
+	 * @param horizontalLength
+	 *            horizontal length
+	 */
+	public final void setHorizontalLength(final Double horizontalLength) {
 		this.horizontalLength = horizontalLength;
 	}
 
-	public double getVerticalLength() {
+	/**
+	 * Get vertical length.
+	 * 
+	 * @return Double
+	 */
+	public final Double getVerticalLength() {
 		return verticalLength;
 	}
 
-	public void setVerticalLength(double verticalLength) {
+	/**
+	 * Set vertical length.
+	 * 
+	 * @param verticalLength
+	 *            length
+	 */
+	public final void setVerticalLength(final Double verticalLength) {
 		this.verticalLength = verticalLength;
 	}
 }
