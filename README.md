@@ -1,2 +1,2 @@
 # springmetro
-Processing measurement data. Spring project.
+Processing measurement data. Spring project. Spring MVC.
