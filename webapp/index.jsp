@@ -6,6 +6,6 @@
 <meta charset="UTF-8">
 </head>
 <body>
-	<c:redirect url="/welcome.htm" />
+	<c:redirect url="/login.htm" />
 </body>
 </html>

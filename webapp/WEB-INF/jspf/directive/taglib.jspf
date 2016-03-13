@@ -7,5 +7,9 @@ JSTL core tag library.
 JSTL functions tag library.
 ===========================================================================--%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%--=========================================================================== 
+SPRING tag library.
+===========================================================================--%>
 
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 

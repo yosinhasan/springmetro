@@ -38,7 +38,10 @@
 					<!-- Paragraph Examples -->
 					<div class="col-md-12">
 						<div class="headline">
-							<h2>Paragraph Examples</h2>
+
+							<h2>
+								<spring:message code="welcome" />
+							</h2>
 						</div>
 
 						<p class="lead">Lorem ipsum dolor sit amet, noster eirmod
