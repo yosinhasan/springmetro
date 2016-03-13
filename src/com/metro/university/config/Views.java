@@ -8,10 +8,17 @@ package com.metro.university.config;
  */
 public final class Views {
 	/**
-	 * View welcome. 
+	 * View welcome.
 	 */
-	public static final String WELCOME="welcome";
-	
+	public static final String WELCOME = "welcome";
+	/**
+	 * View login.
+	 */
+	public static final String LOGIN = "login";
+	/**
+	 * View signup.
+	 */
+	public static final String SIGNUP = "signup";
 
 	/**
 	 * Private constructor.

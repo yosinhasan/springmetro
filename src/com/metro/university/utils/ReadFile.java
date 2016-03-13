@@ -23,8 +23,6 @@ public class ReadFile {
 	}
 
 	private void doInBackground() throws Exception {
-		int curr = 0;
-		long len = file.length();
 		dataEntities = new ArrayList<DataEntity>();
 		picketEntities = new LinkedList<PicketEntity>();
 		try {
@@ -32,6 +30,8 @@ public class ReadFile {
 			BufferedReader reader = new BufferedReader(fileReader);
 			String info = reader.readLine();
 			String info1 = reader.readLine();
+			int curr = 0;
+			long len = file.length();
 
 			String line = "";
 			int i = 0;
