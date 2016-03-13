@@ -13,16 +13,20 @@ import org.springframework.web.servlet.ModelAndView;
  *
  */
 @Controller
-public class MainController {
-	@RequestMapping("/welcome.htm")
+public class UserController {
+	@RequestMapping("/login.htm")
 	public ModelAndView welcome(HttpServletRequest request, HttpServletResponse response) {
-		String message = "Привет друг!";
-		return new ModelAndView("welcome", "message", message);
+		return new ModelAndView("login");
 	}
 
-	@RequestMapping("/contact.htm")
+	@RequestMapping("/logout.htm")
+	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) {
+		return new ModelAndView("welcome");
+	}
+
+	@RequestMapping("/signup.htm")
 	public ModelAndView contact(HttpServletRequest request, HttpServletResponse response) {
 
-		return new ModelAndView("contact");
+		return new ModelAndView("signup");
 	}
 }

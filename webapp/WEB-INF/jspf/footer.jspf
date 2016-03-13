@@ -3,7 +3,7 @@
 		<div class="row">
 			<!-- Thumbs Gallery -->
 			<div class="col-md-3 margin-bottom-20">
-				<h3 class="margin-bottom-10">Portfolio Highlights</h3>
+				<h3 class="margin-bottom-10">Features</h3>
 				<div class="thumbs-gallery">
 
 					<a class="thumbBox" rel="lightbox-thumbs"
@@ -64,12 +64,12 @@
 			<!-- End Contact Details -->
 			<!-- Sample Menu -->
 			<div class="col-md-3 margin-bottom-20">
-				<h3 class="margin-bottom-10">Sample Menu</h3>
+				<h3 class="margin-bottom-10">Menu</h3>
 				<ul class="menu">
-					<li><a class="fa-tasks" href="#">Placerat facer possim</a></li>
-					<li><a class="fa-users" href="#">Quam nunc putamus</a></li>
-					<li><a class="fa-signal" href="#">Velit esse molestie</a></li>
-					<li><a class="fa-coffee" href="#">Nam liber tempor</a></li>
+					<li><a class="fa-tasks" href="#">Archive</a></li>
+					<li><a class="fa-users" href="#">Import data</a></li>
+					<li><a class="fa-signal" href="#">Export data</a></li>
+					<li><a class="fa-coffee" href="#">Process data</a></li>
 				</ul>
 				<div class="clearfix"></div>
 
@@ -94,14 +94,13 @@
 	<div class="container">
 		<div class="row">
 			<div id="copyright" class="col-md-4">
-				<p>(c) 2014 Your Copyright Info</p>
+				<p>&copy; 2016 Hasan Yosin</p>
 			</div>
 			<div id="footermenu" class="col-md-8">
 				<ul class="list-unstyled list-inline pull-right">
-					<li><a href="#" target="_blank">Sample Link</a></li>
-					<li><a href="#" target="_blank">Sample Link</a></li>
-					<li><a href="#" target="_blank">Sample Link</a></li>
-					<li><a href="#" target="_blank">Sample Link</a></li>
+					<li><a href="welcome.htm">Home</a></li>
+					<li><a href="cabinet">Cabinen</a></li>
+					<li><a href="contact.htm">Contact</a></li>
 				</ul>
 			</div>
 		</div>
