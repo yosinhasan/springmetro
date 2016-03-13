@@ -14,7 +14,7 @@
 				<div class="col-md-6 col-md-offset-3 col-sm-offset-3">
 					<form class="login-page">
 						<div class="login-header margin-bottom-30">
-							<h2>Login to your account</h2>
+							<h2><spring:message code="loginTip"/></h2>
 						</div>
 						<div class="input-group margin-bottom-20">
 							<span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -27,17 +27,17 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<label class="checkbox"><input type="checkbox">
-									Stay signed in</label>
+								<label class="checkbox"><input type="checkbox"><spring:message code="stayTip"/>
+									</label>
 							</div>
 							<div class="col-md-6">
-								<button class="btn btn-primary pull-right" type="submit">Login</button>
+								<button class="btn btn-primary pull-right" type="submit"><spring:message code="login"/></button>
 							</div>
 						</div>
 						<hr>
-						<h4>Forget your Password ?</h4>
+						<h4><spring:message code="forgetPassword"/></h4>
 						<p>
-							<a href="#">Click here</a> to reset your password.
+							<a href="#"><spring:message code="clickHere" /></a>
 						</p>
 					</form>
 				</div>

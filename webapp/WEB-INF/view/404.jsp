@@ -4,7 +4,6 @@
 <html>
 <%@ include file="/WEB-INF/jspf/head.jspf"%>
 <body>
-	<%@ include file="/WEB-INF/jspf/header.jspf"%>
 	<!-- === END HEADER === -->
 	<!-- === BEGIN CONTENT === -->
 	<div id="content" class="container">
@@ -30,7 +29,6 @@
 
 	<!-- === END CONTENT === -->
 	<!-- === BEGIN FOOTER === -->
-	<%@ include file="/WEB-INF/jspf/footer.jspf"%>
 </body>
 </html>
 <!-- === END FOOTER === -->

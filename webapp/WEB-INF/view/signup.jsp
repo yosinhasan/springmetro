@@ -13,25 +13,23 @@
 			<div class="col-md-6 col-md-offset-3 col-sm-offset-3">
 				<form class="signup-page">
 					<div class="signup-header">
-						<h2>Register a new account</h2>
+						<h2><spring:message code="registerTip"/></h2>
 						<p>
-							Already a member? Click <a href="#">HERE</a> to login to your
-							account.
+							<spring:message code="alreadyAMember"/>
 						</p>
 					</div>
-					<label>First Name</label> <input
-						class="form-control margin-bottom-20" type="text"> <label>Last
-						Name</label> <input class="form-control margin-bottom-20" type="text">
+					<label><spring:message code="firstName"/></label> <input
+						class="form-control margin-bottom-20" type="text"> <label><spring:message code="lastName"/></label> <input class="form-control margin-bottom-20" type="text">
 
-					<label>Email Address <span class="color-red">*</span></label> <input
+					<label><spring:message code="email" /> <span class="color-red">*</span></label> <input
 						class="form-control margin-bottom-20" type="text">
 					<div class="row">
 						<div class="col-sm-6">
-							<label>Password <span class="color-red">*</span></label> <input
+							<label><spring:message code="password" /><span class="color-red">*</span></label> <input
 								class="form-control margin-bottom-20" type="password">
 						</div>
 						<div class="col-sm-6">
-							<label>Confirm Password <span class="color-red">*</span></label>
+							<label><spring:message code="confirmPassword" /> <span class="color-red">*</span></label>
 							<input class="form-control margin-bottom-20" type="password">
 						</div>
 					</div>
@@ -39,11 +37,11 @@
 					<div class="row">
 						<div class="col-lg-8">
 							<label class="checkbox"> <input type="checkbox">
-								I read the <a href="#">Terms and Conditions</a>
+								<spring:message code="termsAndConditions1" /> <a href="#"><spring:message code="termsAndConditions2" /></a>
 							</label>
 						</div>
 						<div class="col-lg-4 text-right">
-							<button class="btn btn-primary" type="submit">Register</button>
+							<button class="btn btn-primary" type="submit"><spring:message code="signup" /></button>
 						</div>
 					</div>
 				</form>

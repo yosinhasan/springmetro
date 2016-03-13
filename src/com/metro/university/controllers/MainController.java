@@ -21,7 +21,7 @@ public class MainController {
 	@Autowired
 	private MessageSource messageSource;
 
-	@RequestMapping("/welcome.htm")
+	@RequestMapping("welcome")
 	public ModelAndView welcome(HttpServletRequest request, HttpServletResponse response) {
 		LOG.debug("Main controller: action welcome");
 		LOG.debug("Action started");

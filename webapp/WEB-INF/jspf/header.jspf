@@ -12,30 +12,22 @@
 		<div class="col-md-12 margin-top-30">
 			<div id="hornav" class="pull-right visible-lg">
 				<ul class="nav navbar-nav">
-					<li><a href="welcome.htm">Home</a></li>
-					<li><span>Functions</span>
+					<li><a href="welcome.htm"><spring:message code="home" /></a></li>
+					<li><span><spring:message code="data" /></span>
 						<ul>
-							<li class="parent"><span>user</span>
-								<ul>
-									<li><a href="login.htm">login</a></li>
-									<li><a href="signup.htm">signup</a></li>
-									<li><a href="logout.htm">log out</a></li>
-									<li><a href="cabinet.htm">go to cabinet</a></li>
-								</ul></li>
-							<li class="parent"><span>data</span>
-								<ul>
-									<li><a href="features-testimonials.html">process</a></li>
-									<li><a href="features-accordions-tabs.html">show</a></li>
-									<li><a href="features-buttons.html">save</a></li>
-									<li><a href="features-buttons.html">delete</a></li>
-								</ul></li>
+							<li><a href="features-testimonials.html"><spring:message
+										code="process" /></a></li>
+							<li><a href="features-accordions-tabs.html"><spring:message
+										code="show" /></a></li>
+							<li><a href="features-buttons.html"><spring:message
+										code="save" /></a></li>
+							<li><a href="features-buttons.html"><spring:message
+										code="delete" /></a></li>
 						</ul></li>
-					<li><a href="login.htm">Archive</a></li>
-					<li><a href="contact.htm">Contact</a></li>
-					<li><a href="login.htm">Login</a></li>
-					<li><a href="signup.htm">Sign up</a></li>
-
-
+					<li><a href="login.htm"><spring:message code="archive" /></a></li>
+					<li><a href="contact.htm"><spring:message code="contact" /></a></li>
+					<li><a href="login.htm"><spring:message code="login" /></a></li>
+					<li><a href="signup.htm"><spring:message code="signup" /></a></li>
 				</ul>
 			</div>
 		</div>
