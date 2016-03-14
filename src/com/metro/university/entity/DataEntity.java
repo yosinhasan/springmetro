@@ -6,6 +6,7 @@ package com.metro.university.entity;
  *
  */
 public class DataEntity extends BaseEntity {
+	
 
 	/**
 	 * 
@@ -85,5 +86,10 @@ public class DataEntity extends BaseEntity {
 	 */
 	public final void setVerticalLength(final Double verticalLength) {
 		this.verticalLength = verticalLength;
+	}
+
+	@Override
+	public String toString() {
+		return "\nh = " + horizontalLength + " v = " + verticalLength;
 	}
 }

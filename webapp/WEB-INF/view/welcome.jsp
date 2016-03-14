@@ -5,6 +5,35 @@
 <%@ include file="/WEB-INF/jspf/head.jspf"%>
 <body>
 	<%@ include file="/WEB-INF/jspf/header.jspf"%>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript"
+		src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+	<c:set var="i" value="0"/>
+	var data = google.visualization.arrayToDataTable([
+      ['x', 'horizontal', 'vertical'],
+		<c:forEach items="${dataentity}" var="entry">
+		[ '${i}', ${entry.getHorizontalLength().doubleValue()}, ${entry.getVerticalLength().doubleValue()}  ],
+		<c:set var='i' value="${i+0.00001}" />
+		</c:forEach>
+	]
+  );
+
+  var options = {
+    title: 'Performance',
+    hAxis: {title: 'x',  titleTextStyle: {color: '#333'}},
+    vAxis: {minValue: 0}
+  };
+
+  var chart = new google.visualization.AreaChart(document.getElementById('dataentity'));
+  chart.draw(data, options);
+}
+
+
+</script>
 	<!-- === END HEADER === -->
 	<!-- === BEGIN CONTENT === -->
 	<div id="content" class="container">
@@ -46,13 +75,14 @@
 						class="accordion-toggle" href="#collapse-settings"
 						data-toggle="collapse"><spring:message code="settings" /></a>
 						<ul id="collapse-settings" class="collapse">
-							<li class="list-group-item list-toggle"><a class="accordion-toggle" href="#collapse-locale"
+							<li class="list-group-item list-toggle"><a
+								class="accordion-toggle" href="#collapse-locale"
 								data-toggle="collapse"><spring:message code="locale" /></a>
 								<ul id="collapse-locale" class="collapse">
-									<li><a href="?lang=en"><i
-											class="fa fa-tags"></i> <spring:message code="en" /></a></li>
-									<li><a href="?lang=ru"><i
-											class="fa fa-tags"></i> <spring:message code="ru" /></a></li>
+									<li><a href="?lang=en"><i class="fa fa-tags"></i> <spring:message
+												code="en" /></a></li>
+									<li><a href="?lang=ru"><i class="fa fa-tags"></i> <spring:message
+												code="ru" /></a></li>
 								</ul></li>
 							<li class="list-group-item"><a
 								href="features-testimonials.html"><spring:message
@@ -80,8 +110,9 @@
 								<spring:message code="welcome" />
 							</h2>
 						</div>
-
-						<p class="lead">Here will be something soon :))</p>
+						<div style="width: 800px;">
+							<div id="dataentity"></div>
+						</div>
 						<div class="clearfix margin-bottom-10"></div>
 					</div>
 				</div>

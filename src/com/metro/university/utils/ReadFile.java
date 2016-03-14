@@ -18,8 +18,9 @@ public class ReadFile {
 	private ArrayList<DataEntity> dataEntities;
 	private LinkedList<PicketEntity> picketEntities;
 
-	public ReadFile(final File file) {
+	public ReadFile(final File file) throws Exception {
 		this.file = file;
+		doInBackground();
 	}
 
 	private void doInBackground() throws Exception {
@@ -82,14 +83,14 @@ public class ReadFile {
 	}
 
 	private double getVerticalDeviation(Integer num) {
-		double subVer = Double.parseDouble(props.getProperty("subVer"));
-		double mulVer = Double.parseDouble(props.getProperty("mulVer"));
+		double subVer = Double.parseDouble("93");
+		double mulVer = Double.parseDouble("1");
 		return (num - subVer) * (mulVer);
 	}
 
 	private double getHorizontalDeviation(Integer num) {
-		double subHor = Double.parseDouble(props.getProperty("subHor"));
-		double mulHor = Double.parseDouble(props.getProperty("mulHor"));
+		double subHor = Double.parseDouble("120");
+		double mulHor = Double.parseDouble("1");
 		return (num - subHor) * (mulHor);
 	}
 }
