@@ -1,2 +1,2 @@
 # springmetro
-Processing measurement data. Spring project. Spring MVC. Tomcat 8.
+Processing measurement data. Spring project. Spring MVC. i18n. Primefaces. JSF.
