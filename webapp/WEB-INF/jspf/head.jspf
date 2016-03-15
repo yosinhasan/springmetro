@@ -10,14 +10,14 @@
 <!-- Favicon -->
 <link href="favicon.html" rel="shortcut icon">
 <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="<%=getServletContext().getContextPath()%>/assets/css/bootstrap.css" rel="stylesheet">
 <!-- Template CSS -->
-<link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/font-awesome.css"
+<link rel="stylesheet" href="<%=getServletContext().getContextPath()%>/assets/css/animate.css" rel="stylesheet">
+<link rel="stylesheet" href="<%=getServletContext().getContextPath()%>/assets/css/font-awesome.css"
 	rel="stylesheet">
-<link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="<%=getServletContext().getContextPath()%>/assets/css/nexus.css" rel="stylesheet">
+<link rel="stylesheet" href="<%=getServletContext().getContextPath()%>/assets/css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="<%=getServletContext().getContextPath()%>/assets/css/custom.css" rel="stylesheet">
 <!-- Google Fonts-->
 <link href="http://fonts.googleapis.com/css?family=Lato:400,300"
 	rel="stylesheet" type="text/css">

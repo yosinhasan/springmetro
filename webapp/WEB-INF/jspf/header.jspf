@@ -3,7 +3,8 @@
 	<div class="row">
 		<!-- Logo -->
 		<div class="logo">
-			<a href="welcome.htm" title=""> <img src="assets/img/logo.png"
+			<a href="<%=getServletContext().getContextPath()%>/app/welcome" title=""> <img
+				src="<%=getServletContext().getContextPath()%>/assets/img/logo.png"
 				alt="Logo" />
 			</a>
 		</div>
@@ -12,7 +13,7 @@
 		<div class="col-md-12 margin-top-30">
 			<div id="hornav" class="pull-right visible-lg">
 				<ul class="nav navbar-nav">
-					<li><a href="welcome.htm"><spring:message code="home" /></a></li>
+					<li><a href="<%=getServletContext().getContextPath()%>/app/welcome"><spring:message code="home" /></a></li>
 					<li><span><spring:message code="data" /></span>
 						<ul>
 							<li><a href="features-testimonials.html"><spring:message
@@ -24,10 +25,10 @@
 							<li><a href="features-buttons.html"><spring:message
 										code="delete" /></a></li>
 						</ul></li>
-					<li><a href="login.htm"><spring:message code="archive" /></a></li>
-					<li><a href="contact.htm"><spring:message code="contact" /></a></li>
-					<li><a href="login.htm"><spring:message code="login" /></a></li>
-					<li><a href="signup.htm"><spring:message code="signup" /></a></li>
+					<li><a href="#"><spring:message code="archive" /></a></li>
+					<li><a href="<%=getServletContext().getContextPath()%>/app/contact"><spring:message code="contact" /></a></li>
+					<li><a href="<%=getServletContext().getContextPath()%>/login.htm"><spring:message code="login" /></a></li>
+					<li><a href="<%=getServletContext().getContextPath()%>/app/signup"><spring:message code="signup" /></a></li>
 				</ul>
 			</div>
 		</div>

@@ -6,42 +6,42 @@
 				<div class="thumbs-gallery">
 
 					<a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image1.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image1.jpg" alt="image1.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image1.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image1.jpg" alt="image1.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image2.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image2.jpg" alt="image2.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image2.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image2.jpg" alt="image2.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image3.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image3.jpg" alt="image3.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image3.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image3.jpg" alt="image3.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image4.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image4.jpg" alt="image4.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image4.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image4.jpg" alt="image4.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image6.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image6.jpg" alt="image6.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image6.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image6.jpg" alt="image6.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image7.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image7.jpg" alt="image7.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image7.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image7.jpg" alt="image7.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image8.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image8.jpg" alt="image8.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image8.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image8.jpg" alt="image8.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image9.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image9.jpg" alt="image9.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image9.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image9.jpg" alt="image9.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image92.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image92.jpg"
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image92.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image92.jpg"
 						alt="image92.jpg"> <i></i></a> <a class="thumbBox"
-						rel="lightbox-thumbs" href="assets/img/thumbsgallery/image94.jpg">
-						<img src="assets/img/thumbsgallery/thumbs/image94.jpg"
+						rel="lightbox-thumbs" href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image94.jpg">
+						<img src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image94.jpg"
 						alt="image94.jpg"> <i></i>
 					</a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image95.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image95.jpg"
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image95.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image95.jpg"
 						alt="image95.jpg"> <i></i></a> <a class="thumbBox"
-						rel="lightbox-thumbs" href="assets/img/thumbsgallery/image96.jpg">
-						<img src="assets/img/thumbsgallery/thumbs/image96.jpg"
+						rel="lightbox-thumbs" href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image96.jpg">
+						<img src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image96.jpg"
 						alt="image96.jpg"> <i></i>
 					</a>
 				</div>
@@ -93,42 +93,42 @@
 				<div class="thumbs-gallery">
 
 					<a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image1.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image1.jpg" alt="image1.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image1.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image1.jpg" alt="image1.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image2.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image2.jpg" alt="image2.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image2.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image2.jpg" alt="image2.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image3.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image3.jpg" alt="image3.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image3.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image3.jpg" alt="image3.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image4.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image4.jpg" alt="image4.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image4.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image4.jpg" alt="image4.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image6.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image6.jpg" alt="image6.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image6.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image6.jpg" alt="image6.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image7.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image7.jpg" alt="image7.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image7.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image7.jpg" alt="image7.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image8.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image8.jpg" alt="image8.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image8.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image8.jpg" alt="image8.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image9.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image9.jpg" alt="image9.jpg">
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image9.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image9.jpg" alt="image9.jpg">
 						<i></i></a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image92.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image92.jpg"
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image92.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image92.jpg"
 						alt="image92.jpg"> <i></i></a> <a class="thumbBox"
-						rel="lightbox-thumbs" href="assets/img/thumbsgallery/image94.jpg">
-						<img src="assets/img/thumbsgallery/thumbs/image94.jpg"
+						rel="lightbox-thumbs" href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image94.jpg">
+						<img src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image94.jpg"
 						alt="image94.jpg"> <i></i>
 					</a> <a class="thumbBox" rel="lightbox-thumbs"
-						href="assets/img/thumbsgallery/image95.jpg"> <img
-						src="assets/img/thumbsgallery/thumbs/image95.jpg"
+						href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image95.jpg"> <img
+						src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image95.jpg"
 						alt="image95.jpg"> <i></i></a> <a class="thumbBox"
-						rel="lightbox-thumbs" href="assets/img/thumbsgallery/image96.jpg">
-						<img src="assets/img/thumbsgallery/thumbs/image96.jpg"
+						rel="lightbox-thumbs" href="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/image96.jpg">
+						<img src="<%=getServletContext().getContextPath()%>/assets/img/thumbsgallery/thumbs/image96.jpg"
 						alt="image96.jpg"> <i></i>
 					</a>
 				</div>
@@ -151,8 +151,7 @@
 			</div>
 			<div id="footermenu" class="col-md-8">
 				<ul class="list-unstyled list-inline pull-right">
-					<li><a href="welcome.htm"><spring:message code="home" /></a></li>
-					<li><a href="contact.htm"><spring:message code="contact" /></a></li>
+					<li><a href="<%=getServletContext().getContextPath()%>/app/welcome"><spring:message code="home" /></a></li>
 				</ul>
 			</div>
 		</div>
@@ -160,23 +159,27 @@
 </div>
 <!-- End Footer Menu -->
 <!-- JS -->
-<script type="text/javascript" src="assets/js/jquery.min.js"
+<script type="text/javascript" src="<%=getServletContext().getContextPath()%>/assets/js/jquery.min.js"
 	type="text/javascript"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"
+<script type="text/javascript" src="<%=getServletContext().getContextPath()%>/assets/js/bootstrap.min.js"
 	type="text/javascript"></script>
-<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="<%=getServletContext().getContextPath()%>/assets/js/scripts.js"></script>
 <!-- Isotope - Portfolio Sorting -->
-<script type="text/javascript" src="assets/js/jquery.isotope.js"
+<script type="text/javascript" src="<%=getServletContext().getContextPath()%>/assets/js/jquery.isotope.js"
 	type="text/javascript"></script>
 <!-- Mobile Menu - Slicknav -->
-<script type="text/javascript" src="assets/js/jquery.slicknav.js"
+<script type="text/javascript" src="<%=getServletContext().getContextPath()%>/assets/js/jquery.slicknav.js"
 	type="text/javascript"></script>
 <!-- Animate on Scroll-->
-<script type="text/javascript" src="assets/js/jquery.visible.js"
+<script type="text/javascript" src="<%=getServletContext().getContextPath()%>/assets/js/jquery.visible.js"
 	charset="utf-8"></script>
 <!-- Slimbox2-->
-<script type="text/javascript" src="assets/js/slimbox2.js"
+<script type="text/javascript" src="<%=getServletContext().getContextPath()%>/assets/js/slimbox2.js"
 	charset="utf-8"></script>
 <!-- Modernizr -->
-<script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+<script src="<%=getServletContext().getContextPath()%>/assets/js/modernizr.custom.js" type="text/javascript"></script>
+
+<!-- COOGLE API CHARTS -->
+<script type="text/javascript"
+	src="<%=getServletContext().getContextPath()%>/assets/js/loader.js"></script>
 <!-- End JS -->
