@@ -26,7 +26,6 @@
 										code="delete" /></a></li>
 						</ul></li>
 					<li><a href="#"><spring:message code="archive" /></a></li>
-					<li><a href="<%=getServletContext().getContextPath()%>/app/contact"><spring:message code="contact" /></a></li>
 					<li><a href="<%=getServletContext().getContextPath()%>/login.htm"><spring:message code="login" /></a></li>
 					<li><a href="<%=getServletContext().getContextPath()%>/app/signup"><spring:message code="signup" /></a></li>
 				</ul>

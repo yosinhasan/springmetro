@@ -11,15 +11,37 @@ import com.metro.university.entity.DataEntity;
  * @author elpai
  *
  */
-public class ListUtils {
-
-	public static List<DataEntity> getListPart(int start, int finish, int max, List<DataEntity> list) {
-		if (finish > max)
-			finish = max;
+public final class ListUtils {
+	/**
+	 * Get list part.
+	 * 
+	 * @param start
+	 *            start
+	 * @param finish
+	 *            finish
+	 * @param max
+	 *            max
+	 * @param list
+	 *            list
+	 * @return List<DataEntity>
+	 */
+	public static List<DataEntity> getListPart(Integer start, Integer finish, Integer max,
+			List<DataEntity> list) {
+		int size = list.size();
+		if (finish > size) {
+			finish = size;
+		}
 		return list.subList(start, finish);
 	}
 
-	public static double getMaxVerticalLength(List<DataEntity> list) {
+	/**
+	 * Get max vertical length.
+	 * 
+	 * @param list
+	 *            list
+	 * @return Double
+	 */
+	public static Double getMaxVerticalLength(final List<DataEntity> list) {
 		DataEntity dataEntity = Collections.max(list, new Comparator<DataEntity>() {
 			@Override
 			public int compare(DataEntity o1, DataEntity o2) {
@@ -36,7 +58,14 @@ public class ListUtils {
 		return dataEntity.getVerticalLength();
 	}
 
-	public static double getMaxHorizontalLength(List<DataEntity> list) {
+	/**
+	 * Get max horizontal length.
+	 * 
+	 * @param list
+	 *            list
+	 * @return Double
+	 */
+	public static Double getMaxHorizontalLength(final List<DataEntity> list) {
 		DataEntity dataEntity = Collections.max(list, new Comparator<DataEntity>() {
 			@Override
 			public int compare(DataEntity o1, DataEntity o2) {

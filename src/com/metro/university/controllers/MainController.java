@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.metro.university.charts.IntervalChart;
 import com.metro.university.utils.ReadFile;
+import com.metro.university.utils.TotalMark;
 
 /**
  * 
@@ -27,12 +28,12 @@ public class MainController {
 	@Autowired
 	private MessageSource messageSource;
 
-	@RequestMapping("welcome")
-	public ModelAndView welcome(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		LOG.debug("Main controller: action welcome");
+	@RequestMapping("process")
+	public ModelAndView process(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		LOG.debug("Main controller: action process");
 		LOG.debug("Action started");
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("welcome");
+		mv.setViewName("process");
 		LOG.trace("Set request parameter: pieDataList ");
 		String path = request.getServletContext().getRealPath("/files/112625.dat");
 		LOG.trace("Path: " + path);
@@ -43,13 +44,17 @@ public class MainController {
 		mv.addObject("vertical", vert);
 		LOG.trace("Set request parameter: horizontal");
 		mv.addObject("horizontal", hor);
+		TotalMark marks = new TotalMark(rf.getPicketEntities(), rf.getDataEntities());
+		List<String> result = marks.getResult();
+		LOG.trace("Set request parameter: marks");
+		mv.addObject("marks", result);
 		LOG.debug("Action finished");
 		return mv;
 	}
 
-	@RequestMapping("/contact")
-	public ModelAndView contact(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping("/welcome")
+	public ModelAndView welcome(HttpServletRequest request, HttpServletResponse response) {
 
-		return new ModelAndView("contact");
+		return new ModelAndView("welcome");
 	}
 }
