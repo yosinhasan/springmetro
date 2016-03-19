@@ -26,41 +26,54 @@
                                 <spring:message code="settings"/>
                             </h3>
                         </div>
+
+
                         <div class="panel-body">
                             <form class="form-horizontal">
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Delta horizontal</label>
+                                    <label class="col-sm-2 control-label"><spring:message
+                                            code="deltaHor"/></label>
                                     <div class="col-sm-10">
                                         <input type="text" name="dH" value="${settings.getDeltaHorizontal()}" class="
-                                               form-control" placeholder="Delta horizontal">
+                                               form-control" placeholder="<spring:message
+                                                code="deltaHor"/>">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Delta vertical</label>
+                                    <label class="col-sm-2 control-label"><spring:message
+                                            code="deltaVer"/></label>
                                     <div class="col-sm-10">
                                         <input type="text" name="dV" value="${settings.getDeltaVertical()}"
-                                               class="form-control" placeholder="Delta vertical">
+                                               class="form-control" placeholder="<spring:message
+                                                code="deltaVer"/>">
                                     </div>
                                 </div>
+
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Coefficient horizontal</label>
+                                    <label class="col-sm-2 control-label"><spring:message
+                                            code="coefHor"/></label>
                                     <div class="col-sm-10">
                                         <input type="text" name="cH" value="${settings.getCoefficientHorizontal()}"
-                                               class="form-control" placeholder="Coefficient horizontal">
+                                               class="form-control" placeholder="<spring:message
+                                                code="coefHor"/>">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Coefficient vertical</label>
+                                    <label class="col-sm-2 control-label"><spring:message
+                                            code="coefVer"/></label>
                                     <div class="col-sm-10">
                                         <input type="text" name="cV" value="${settings.getCoefficientVertical()}"
-                                               class="form-control" placeholder="Coefficient vertical">
+                                               class="form-control" placeholder="<spring:message
+                                            code="coefVer"/>">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label">Length</label>
+                                    <label class="col-sm-2 control-label"><spring:message
+                                            code="length"/></label>
                                     <div class="col-sm-10">
                                         <input type="text" name="length" value="${settings.getLength()}"
-                                               class="form-control" placeholder="Length">
+                                               class="form-control" placeholder="<spring:message
+                                            code="length"/>">
                                     </div>
                                 </div>
 
