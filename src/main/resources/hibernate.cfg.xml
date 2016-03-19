@@ -4,9 +4,11 @@
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
-    <property name="connection.url">jdbc:mysql://localhost:3306/diplomawork</property>
-    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <mapping resource="com.metro.university.entity/Files.hbm.xml"/>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/diplomawork</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
     <mapping resource="com.metro.university.entity/FilesEntity.hbm.xml"/>
     <!-- DB schema will be updated if needed -->
     <!-- <property name="hbm2ddl.auto">update</property> -->
