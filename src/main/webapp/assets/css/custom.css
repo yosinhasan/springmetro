@@ -1,0 +1,10 @@
+.showFiles {
+    list-style: none;
+}
+.showFiles li {
+    width: 60%;
+    margin: 1%;
+}
+.showFiles li a {
+    width: 100%;
+}
