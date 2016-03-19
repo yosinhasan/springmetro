@@ -21,16 +21,6 @@
 	<!-- Testimonials -->
 	<li class="list-group-item"><a href="features-testimonials.html"><spring:message
 				code="archive" /></a></li>
-	<!-- Components -->
-	<li class="list-group-item list-toggle"><a
-		class="accordion-toggle" href="#collapse-user" data-toggle="collapse"><spring:message
-				code="user" /></a>
-		<ul id="collapse-user" class="collapse">
-			<li><a href="features-labels.html"><i class="fa fa-tags"></i>
-					<spring:message code="edit" /></a></li>
-			<li><a href="features-labels.html"><i class="fa fa-tags"></i>
-					<spring:message code="delete" /></a></li>
-		</ul></li>
 	<!-- End Components -->
 	<li class="list-group-item list-toggle"><a
 		class="accordion-toggle" href="#collapse-settings"
@@ -45,7 +35,7 @@
 					<li><a href="?lang=ru"><i class="fa fa-tags"></i> <spring:message
 								code="ru" /></a></li>
 				</ul></li>
-			<li class="list-group-item"><a href="features-testimonials.html"><spring:message
+			<li class="list-group-item"><a href="<%=getServletContext().getContextPath()%>/app/settings"><spring:message
 						code="settingsData" /></a></li>
 
 		</ul></li>

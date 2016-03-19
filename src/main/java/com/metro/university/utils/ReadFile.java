@@ -50,7 +50,7 @@ public class ReadFile {
 					i++;
 				} else if (data.length == 5) {
 					PicketEntity picketEntity = new PicketEntity();
-					picketEntity.setInformation("Пикет" + line);
+					picketEntity.setInformation("Пикет " + line);
 					picketEntity.setStartPoint(i);
 					picketEntities.add(picketEntity);
 					if (current != 0) {

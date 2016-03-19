@@ -20,23 +20,30 @@
             <div class="row">
                 <!-- Paragraph Examples -->
                 <div class="col-md-12">
-                    <div class="headline">
-
-                        <h2>
-                            <spring:message code="info"/>
-                        </h2>
-                    </div>
-                    <div style="width: 800px;">
-                        <div id="dataentity"></div>
-                    </div>
-                    <div style="width: 800px;">
-                        <div id="horizontal"></div>
+                    <div class="panel panel-primary invert">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><spring:message code="info"/>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <div id="dataentity"></div>
+                            </div>
+                            <div>
+                                <div id="horizontal"></div>
+                            </div>
+                            <br>
+                            <div>
+                                <c:forEach items="${marks }" var="item">
+                                    <blockquote class="processFile">
+                                        <p><b>${item }</b></p>
+                                    </blockquote>
+                                </c:forEach>
+                            </div>
+                        </div>
                     </div>
                     <div>
 
-                        <c:forEach items="${marks }" var="item">
-                            <p>${item }</p>
-                        </c:forEach>
                     </div>
                     <div class="clearfix margin-bottom-10"></div>
                 </div>

@@ -1,8 +1,11 @@
+blockquote.processFile {
+    color: #363539;
+}
 .showFiles {
     list-style: none;
 }
 .showFiles li {
-    width: 60%;
+    width: 90%;
     margin: 1%;
 }
 .showFiles li a {

@@ -7,7 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.metro.university.dao.impl.FilesDAOImpl;
+import com.metro.university.dao.impl.SettingsDAOImpl;
 import com.metro.university.entity.FilesEntity;
+import com.metro.university.entity.SettingsEntity;
 import com.metro.university.utils.Validator;
 import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
@@ -33,6 +35,8 @@ public class MainController {
     private MessageSource messageSource;
     @Autowired
     FilesDAOImpl filesDAOImpl;
+    @Autowired
+    SettingsDAOImpl settingsDAOImpl;
 
 
     @RequestMapping("/process")
@@ -106,6 +110,18 @@ public class MainController {
         }
         List<FilesEntity> files = filesDAOImpl.getFiles();
         mv.addObject("files", files);
+        LOG.debug("Action finished");
+        return mv;
+    }
+    @RequestMapping("/settings")
+    public ModelAndView settings(HttpServletRequest request, HttpServletResponse response) {
+        LOG.debug("Main controller: action settings");
+        LOG.debug("Action started");
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("settings");
+        SettingsEntity settings = settingsDAOImpl.getSettings();
+        LOG.trace("Found in db: settings " + settings);
+        mv.addObject("settings", settings);
         LOG.debug("Action finished");
         return mv;
     }

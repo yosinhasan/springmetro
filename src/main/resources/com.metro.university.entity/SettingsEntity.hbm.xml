@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.metro.university.entity.SettingsEntity" table="settings" schema="" catalog="diplomawork">
+        <id name="coefficientVertical" column="coefficientVertical"/>
+        <property name="deltaVertical" column="deltaVertical"/>
+        <property name="coefficientHorizontal" column="coefficientHorizontal"/>
+        <property name="deltaHorizontal" column="deltaHorizontal"/>
+        <property name="length" column="length"/>
+    </class>
+</hibernate-mapping>
