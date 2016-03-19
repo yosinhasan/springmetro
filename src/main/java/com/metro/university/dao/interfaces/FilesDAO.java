@@ -30,12 +30,11 @@ public interface FilesDAO {
     FilesEntity getFile(Integer id);
 
     /**
-     * Get field value.
+     * Delete file by id.
      *
-     * @param id        id
-     * @param fieldName field name
-     * @return Object
+     * @param id id to delete
+     * @return Boolean
      */
-    Object getFieldValue(Long id, String fieldName);
+    Boolean deleteFile(Integer id);
 
 }
