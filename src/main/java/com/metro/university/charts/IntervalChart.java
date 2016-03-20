@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.metro.university.entity.DataEntity;
+import com.metro.university.entity.SettingsEntity;
 
 /**
  * @author elpai
@@ -14,13 +15,13 @@ import com.metro.university.entity.DataEntity;
  */
 public class IntervalChart {
 
-	public static List<KeyValue> getVertical(List<DataEntity> item) {
+	public static List<KeyValue> getVertical(List<DataEntity> item, SettingsEntity settings) {
 		List<KeyValue> chart = new ArrayList<KeyValue>();
 		Integer width = 100;
 		Integer j;
 		String quick = "false";
 		Integer step = 1;
-		double len = 2.35;
+		double len = settings.getLength();
 		KeyValue kv = null;
 		if (quick.equals("true")) {
 			step = item.size() / width;
@@ -35,13 +36,13 @@ public class IntervalChart {
 		return chart;
 	}
 
-	public static List<KeyValue> getHorizontal(List<DataEntity> item) {
+	public static List<KeyValue> getHorizontal(List<DataEntity> item, SettingsEntity settings) {
 		List<KeyValue> chart = new ArrayList<KeyValue>();
 		Integer width = 100;
 		Integer j;
 		String quick = "false";
 		Integer step = 1;
-		double len = 2.35;
+		double len = settings.getLength();
 		KeyValue kv = null;
 		if (quick.equals("true")) {
 			step = item.size() / width;

@@ -11,15 +11,18 @@ import java.util.Properties;
 
 import com.metro.university.entity.DataEntity;
 import com.metro.university.entity.PicketEntity;
+import com.metro.university.entity.SettingsEntity;
 
 public class ReadFile {
 	private File file;
 	private Properties props;
 	private ArrayList<DataEntity> dataEntities;
 	private LinkedList<PicketEntity> picketEntities;
+	private SettingsEntity settings;
 
-	public ReadFile(final File file) throws Exception {
+	public ReadFile(final File file, SettingsEntity entity) throws Exception {
 		this.file = file;
+		this.settings = entity;
 		doInBackground();
 	}
 
@@ -83,14 +86,14 @@ public class ReadFile {
 	}
 
 	private double getVerticalDeviation(Integer num) {
-		double subVer = Double.parseDouble("93");
-		double mulVer = Double.parseDouble("1");
+		double subVer = settings.getDeltaVertical();
+		double mulVer = settings.getCoefficientVertical();
 		return (num - subVer) * (mulVer);
 	}
 
 	private double getHorizontalDeviation(Integer num) {
-		double subHor = Double.parseDouble("120");
-		double mulHor = Double.parseDouble("1");
+		double subHor = settings.getDeltaHorizontal();
+		double mulHor = settings.getCoefficientHorizontal();
 		return (num - subHor) * (mulHor);
 	}
 }

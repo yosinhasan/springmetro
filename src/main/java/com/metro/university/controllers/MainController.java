@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -63,9 +64,10 @@ public class MainController {
             if (file != null) {
                 String path = request.getServletContext().getRealPath("/files/" + file.getName() + ".dat");
                 LOG.trace("Path: " + path);
-                ReadFile rf = new ReadFile(new File(path));
-                List<IntervalChart.KeyValue> vert = IntervalChart.getVertical(rf.getDataEntities());
-                List<IntervalChart.KeyValue> hor = IntervalChart.getHorizontal(rf.getDataEntities());
+                SettingsEntity settings = settingsDAOImpl.getSettings();
+                ReadFile rf = new ReadFile(new File(path), settings);
+                List<IntervalChart.KeyValue> vert = IntervalChart.getVertical(rf.getDataEntities(), settings);
+                List<IntervalChart.KeyValue> hor = IntervalChart.getHorizontal(rf.getDataEntities(), settings);
                 LOG.trace("Set request parameter: vertical");
                 mv.addObject("vertical", vert);
                 LOG.trace("Set request parameter: horizontal");
@@ -220,7 +222,8 @@ public class MainController {
             if (object != null) {
                 String path = request.getServletContext().getRealPath("/files/" + object.getName() + ".dat");
                 File file = new File(path);
-                ReadFile rd = new ReadFile(file);
+                SettingsEntity settings = settingsDAOImpl.getSettings();
+                ReadFile rd = new ReadFile(file, settings);
                 return new ModelAndView("DataEntityListExcel", "dataEntityList", rd.getDataEntities());
              }
         }
