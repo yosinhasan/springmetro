@@ -15,6 +15,7 @@ import com.metro.university.entity.FilesEntity;
 import com.metro.university.entity.SettingsEntity;
 import com.metro.university.utils.DateUtil;
 import com.metro.university.utils.Validator;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -195,4 +196,36 @@ public class MainController {
         }
         return "redirect:/app/process";
     }
+
+    @RequestMapping("/save")
+    public ModelAndView save(HttpServletRequest request, HttpServletResponse response) {
+        LOG.debug("Main controller: action save");
+        LOG.debug("Action started");
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("save");
+        List<FilesEntity> files = filesDAOImpl.getFiles();
+        mv.addObject("files", files);
+        LOG.debug("Action finished");
+        return mv;
+    }
+
+    @RequestMapping("/export")
+    public ModelAndView export(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        LOG.debug("Main controller: action export");
+        LOG.debug("Action started");
+        String id = request.getParameter("id");
+        LOG.trace("Request parameter: " + id);
+        if (Validator.isValidNumber(id)) {
+            FilesEntity object = filesDAOImpl.getFile(Integer.parseInt(id));
+            if (object != null) {
+                String path = request.getServletContext().getRealPath("/files/" + object.getName() + ".dat");
+                File file = new File(path);
+                ReadFile rd = new ReadFile(file);
+                return new ModelAndView("DataEntityListExcel", "dataEntityList", rd.getDataEntities());
+             }
+        }
+        LOG.debug("Action finished");
+        return null;
+    }
+
 }

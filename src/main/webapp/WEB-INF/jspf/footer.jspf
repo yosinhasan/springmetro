@@ -31,13 +31,13 @@
 					<spring:message code="menu" />
 				</h3>
 				<ul class="menu">
-					<li><a class="fa-tasks" href="#"><spring:message
+					<li><a class="fa-tasks" href="<%=request.getServletContext().getContextPath()%>/app/show"><spring:message
 								code="archive" /></a></li>
-					<li><a class="fa-users" href="#"><spring:message
+					<li><a class="fa-users" href="<%=request.getServletContext().getContextPath()%>/app/process"><spring:message
 								code="importData" /></a></li>
-					<li><a class="fa-signal" href="#"><spring:message
+					<li><a class="fa-signal" href="<%=request.getServletContext().getContextPath()%>/app/save"><spring:message
 								code="exportData" /></a></li>
-					<li><a class="fa-coffee" href="#"><spring:message
+					<li><a class="fa-coffee" href="<%=request.getServletContext().getContextPath()%>/app/process"><spring:message
 								code="processData" /></a></li>
 				</ul>
 				<div class="clearfix"></div>
