@@ -22,8 +22,18 @@
                 <div class="col-md-12">
                     <div class="panel panel-primary invert">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><spring:message code="info"/>
-                            </h3>
+                            <h3 class="panel-title"><spring:message code="info"/></h3>
+                            <form class="form-inline processForm" method="POST" action="<%=request.getServletContext().getContextPath()%>/app/uploadFile"
+                                  enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label class="sr-only" for="file">Choose file</label>
+                                    <input type="file" name="file" id="file" value="choose file">
+                                </div>
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fa fa-bar-chart-o"></i> <spring:message code="process"/>
+                                </button>
+                            </form>
+
                         </div>
                         <div class="panel-body">
                             <div>

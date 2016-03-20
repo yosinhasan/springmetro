@@ -14,6 +14,7 @@ public class SettingsEntity implements Serializable {
     private double coefficientHorizontal;
     private double deltaHorizontal;
     private double length;
+    private int id;
 
     public double getCoefficientVertical() {
         return coefficientVertical;
@@ -87,9 +88,18 @@ public class SettingsEntity implements Serializable {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
+
     @Override
     public String toString() {
         return "Length = " + length + ", deltaVertical = " + deltaVertical + ", coefficientVertical = " + coefficientVertical
                 + ", deltaHorizontal = " + deltaHorizontal + ", coefficientHorizontal = " + coefficientHorizontal;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

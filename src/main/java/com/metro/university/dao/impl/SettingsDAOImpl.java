@@ -36,4 +36,19 @@ public class SettingsDAOImpl {
         LOG.debug("Query finished.");
         return settings;
     }
+    /**
+     * Get settings.
+     *
+     * @return SettingsEntity
+     */
+
+    @Transactional
+    public void updateSettings(SettingsEntity entity) {
+        LOG.debug("Query get settings started.");
+        Session session = sessionFactory.getCurrentSession();
+        LOG.trace("Entity to update: " + entity);
+        session.update(entity);
+        LOG.debug("Query finished.");
+        return;
+    }
 }

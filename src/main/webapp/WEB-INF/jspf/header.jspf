@@ -29,7 +29,7 @@
                                     href="<%=getServletContext().getContextPath()%>/app/delete"><i
                                     class="fa fa-tags"></i> <spring:message code="delete" /></a></li>
 						</ul></li>
-					<li><a href="#"><spring:message code="archive" /></a></li>
+					<li><a href="<%=getServletContext().getContextPath()%>/app/show"><spring:message code="archive" /></a></li>
 					<li><a href="<%=getServletContext().getContextPath()%>/login.htm"><spring:message code="login" /></a></li>
 				</ul>
 			</div>

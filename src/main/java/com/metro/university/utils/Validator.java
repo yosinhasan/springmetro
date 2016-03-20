@@ -46,6 +46,22 @@ public final class Validator {
 	}
 
 	/**
+	 * Check if user entered valid number.
+	 *
+	 * @param number
+	 *            user input to check
+	 * @return true if entered text is valid number, false otherwise
+	 */
+	public static boolean isValidDoubleNumber(final String number) {
+		if (number == null || number.isEmpty()) {
+			return false;
+		}
+		Pattern pattern = Pattern.compile("^[0-9]+.?[0-9]*$");
+		Matcher matcher = pattern.matcher(number);
+		return matcher.matches();
+	}
+
+	/**
 	 * Check if user entered passwords match while registration.
 	 * 
 	 * @param pass

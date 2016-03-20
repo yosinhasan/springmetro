@@ -5,7 +5,8 @@
 <hibernate-mapping>
 
     <class name="com.metro.university.entity.SettingsEntity" table="settings" schema="" catalog="diplomawork">
-        <id name="coefficientVertical" column="coefficientVertical"/>
+        <id name="id" column="id"/>
+        <property name="coefficientVertical" column="coefficientVertical"/>
         <property name="deltaVertical" column="deltaVertical"/>
         <property name="coefficientHorizontal" column="coefficientHorizontal"/>
         <property name="deltaHorizontal" column="deltaHorizontal"/>

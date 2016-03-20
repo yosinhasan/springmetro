@@ -19,7 +19,7 @@
 		</ul></li>
 	<!-- End Components -->
 	<!-- Testimonials -->
-	<li class="list-group-item"><a href="features-testimonials.html"><spring:message
+	<li class="list-group-item"><a href="<%=getServletContext().getContextPath()%>/app/show"><spring:message
 				code="archive" /></a></li>
 	<!-- End Components -->
 	<li class="list-group-item list-toggle"><a

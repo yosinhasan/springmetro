@@ -29,7 +29,7 @@
 
 
                         <div class="panel-body">
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" action="<%=request.getServletContext().getContextPath()%>/app/settings" method="post">
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label"><spring:message
                                             code="deltaHor"/></label>
@@ -80,7 +80,7 @@
 
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
-                                        <button class="btn btn-lg btn-primary" type="button">
+                                        <button class="btn btn-lg btn-primary" type="submit">
                                             <i class="fa fa-cogs"></i><spring:message
                                                 code="save"/>
                                         </button>

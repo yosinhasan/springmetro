@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.List;
 
 @Component
@@ -70,6 +72,7 @@ public class FilesDAOImpl {
         LOG.debug("Query finished.");
         return file;
     }
+
     /**
      * Delete file by id.
      *
@@ -89,5 +92,18 @@ public class FilesDAOImpl {
         }
         LOG.debug("Query finished.");
         return false;
+    }
+
+    @Transactional
+    public Integer createFile(String filename) {
+        LOG.debug("Query create file started.");
+        Session session = sessionFactory.getCurrentSession();
+        FilesEntity object = new FilesEntity();
+        object.setName(filename);
+        session.saveOrUpdate(object);
+//        Integer id = object.getId();
+        Integer id = getFile(filename).getId();
+        LOG.debug("Query finished.");
+        return id;
     }
 }
